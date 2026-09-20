@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="referrer" content="no-referrer">
-<title>Plan Maestro Integrado 2027–2029 · V11.2 Web</title>
+<title>Plan Maestro Integrado 2027–2029 · V11 Web</title>
 <style>
 :root{--bg:#07111f;--panel:#0e1a2c;--panel2:#13243c;--text:#f3f7fd;--muted:#a6b6cb;--line:#29415f;--gold:#dfbd75;--blue:#58a8ff;--green:#57c982;--orange:#ffa25d;--red:#ef7d7d}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#07101c,#0b1728 50%,#0c192b);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.45}
@@ -121,95 +121,15 @@ section{display:none}section.active{display:block}.grid2{display:grid;grid-templ
 @media(max-width:650px){.route-scroller,.stage-gallery,.experience-grid,.premium-banner{grid-template-columns:1fr}.stage-gallery figure:first-child{grid-column:auto}.route-card{grid-template-rows:155px auto}.lightbox{padding:10px}}
 
 
-/* ===== TABLAS V11.2 · alineación robusta ===== */
-.tablewrap{
-  width:100%;
-  overflow-x:auto;
-  overflow-y:hidden;
-  border:1px solid var(--line);
-  border-radius:15px;
-  -webkit-overflow-scrolling:touch;
-}
-.tablewrap table{
-  width:100%;
-  border-collapse:collapse;
-  border-spacing:0;
-  table-layout:fixed;
-  background:#0d192b;
-}
-.tablewrap th,
-.tablewrap td{
-  padding:14px 16px;
-  border-bottom:1px solid var(--line);
-  line-height:1.45;
-  text-align:left;
-  vertical-align:top;
-  overflow-wrap:normal;
-  word-break:normal;
-  hyphens:none;
-}
-.tablewrap thead th{
-  background:#162945;
-  color:#fff;
-  font-weight:800;
-  vertical-align:middle;
-}
-.tablewrap tbody tr:last-child td{border-bottom:0}
-
-/* Cronograma */
-.schedule-table{min-width:1120px}
-.schedule-table th:nth-child(1),.schedule-table td:nth-child(1){width:15%;white-space:nowrap}
+/* V11.2 · Corrección geométrica de tabla de cronograma de construcción */
+.schedule-table{table-layout:fixed;min-width:1080px}
+.schedule-table th,.schedule-table td{overflow-wrap:anywhere;word-break:normal;hyphens:auto}
+.schedule-table th:nth-child(1),.schedule-table td:nth-child(1){width:16%;min-width:170px}
 .schedule-table th:nth-child(2),.schedule-table td:nth-child(2){width:31%}
 .schedule-table th:nth-child(3),.schedule-table td:nth-child(3){width:20%}
-.schedule-table th:nth-child(4),.schedule-table td:nth-child(4){width:34%}
-
-/* Presupuestos */
-.money-table{
-  min-width:1040px !important;
-  table-layout:fixed !important;
-}
-.money-table th:first-child,.money-table td:first-child{
-  text-align:left !important;
-  vertical-align:top !important;
-}
-.money-table th:not(:first-child),
-.money-table td:not(:first-child){
-  text-align:right !important;
-  vertical-align:middle !important;
-  white-space:nowrap !important;
-  word-break:keep-all !important;
-  overflow-wrap:normal !important;
-  font-variant-numeric:tabular-nums;
-  font-feature-settings:"tnum" 1;
-}
-.budget-main th:nth-child(1),.budget-main td:nth-child(1){width:64% !important}
-.budget-main th:nth-child(2),.budget-main td:nth-child(2){width:14% !important}
-.budget-main th:nth-child(3),.budget-main td:nth-child(3){width:14% !important}
-.budget-main th:nth-child(4),.budget-main td:nth-child(4){width:8% !important}
-
-.access-budget th:nth-child(1),.access-budget td:nth-child(1){width:55% !important}
-.access-budget th:nth-child(2),.access-budget td:nth-child(2){width:15% !important}
-.access-budget th:nth-child(3),.access-budget td:nth-child(3){width:15% !important}
-.access-budget th:nth-child(4),.access-budget td:nth-child(4){width:15% !important}
-
-/* Transporte */
-.transport-table{min-width:980px}
-.transport-table th:nth-child(1),.transport-table td:nth-child(1){width:28%}
-.transport-table th:nth-child(2),.transport-table td:nth-child(2){width:28%}
-.transport-table th:nth-child(3),.transport-table td:nth-child(3){width:44%}
-
-/* Filas: lectura horizontal más clara */
-.data-table tbody tr:nth-child(even) td,
-.money-table tbody tr:nth-child(even) td{background:rgba(255,255,255,.015)}
-.data-table tbody tr:hover td,
-.money-table tbody tr:hover td{background:rgba(88,168,255,.045)}
-
-@media(max-width:900px){
-  .schedule-table{min-width:1000px}
-  .transport-table{min-width:900px}
-  .money-table{min-width:920px !important}
-  .tablewrap th,.tablewrap td{padding:12px 13px}
-}
+.schedule-table th:nth-child(4),.schedule-table td:nth-child(4){width:33%}
+.schedule-table td:first-child{font-weight:600;color:#eef4fc}
+@media(max-width:900px){.schedule-table{min-width:1040px}}
 
 </style>
 </head>
@@ -217,7 +137,7 @@ section{display:none}section.active{display:block}.grid2{display:grid;grid-templ
 <div class="wrap">
 <div class="hero">
   <div class="card hero-main">
-    <div class="kicker">Plan maestro integrado · V11.2 Web</div>
+    <div class="kicker">Plan maestro integrado · V11 Web</div>
     <h1>Viajes + Construcción</h1>
     <p>Versión V11: integra la actualización constructiva EPS V.9 del Residencial Los Ángeles, manteniendo el travel book, calendario, hoteles, transportes y galería ampliada.</p>
   </div>
@@ -313,7 +233,7 @@ section{display:none}section.active{display:block}.grid2{display:grid;grid-templ
   <div class="kicker">Residencial Los Ángeles · EPS V.9</div>
   <h2>Cronograma, fases y especificaciones</h2>
   <div class="notice">EPS V.9 sustituye la solución HCA por panel estructural de EPS con micro-concreto; mantiene 150 m², 15 × 550 W (8,25 kWp), 36 kWh LiFePO4 e inversor de 8 kW, e incorpora respaldo terciario GLP ~6 kW/48 VDC con autoarranque. El presupuesto maestro oficial es Q 1.401.300 y el dossier añade por separado Q 126.700 para puente peatonal y escalera exterior.</div>
-  <div class="tablewrap"><table class="data-table schedule-table"><thead><tr><th>Periodo</th><th>Hito / fase</th><th>Presencia propietarios</th><th>Criterio de control</th></tr></thead><tbody id="constSchedule"></tbody></table></div>
+  <div class="tablewrap"><table class="schedule-table"><thead><tr><th>Periodo</th><th>Hito / fase</th><th>Presencia propietarios</th><th>Criterio de control</th></tr></thead><tbody id="constSchedule"></tbody></table></div>
 </div>
 <div class="card" style="padding:18px;margin-top:18px">
   <div class="kicker">Presupuesto maestro por fase</div>
@@ -837,11 +757,11 @@ section{display:none}section.active{display:block}.grid2{display:grid;grid-templ
 </div>
 <div class="card" style="padding:18px;margin-top:18px">
   <div class="kicker">Viaje Mundial V2.5</div><h2>Arquitectura de transporte</h2>
-  <div class="tablewrap"><table class="data-table transport-table"><thead><tr><th>Sector</th><th>Medio recomendado</th><th>Criterio operativo</th></tr></thead><tbody id="wTransport"></tbody></table></div>
+  <div class="tablewrap"><table><thead><tr><th>Sector</th><th>Medio recomendado</th><th>Criterio operativo</th></tr></thead><tbody id="wTransport"></tbody></table></div>
 </div>
 <div class="card" style="padding:18px;margin-top:18px">
   <div class="kicker">Centro y Sudamérica V1.5</div><h2>Arquitectura aérea y de traslados</h2>
-  <div class="tablewrap"><table class="data-table transport-table"><thead><tr><th>Sector</th><th>Medio recomendado</th><th>Criterio operativo</th></tr></thead><tbody id="saTransport"></tbody></table></div>
+  <div class="tablewrap"><table><thead><tr><th>Sector</th><th>Medio recomendado</th><th>Criterio operativo</th></tr></thead><tbody id="saTransport"></tbody></table></div>
 </div>
 </section>
 
@@ -993,11 +913,9 @@ function wireSearch(inputId,containerId){
 wireSearch("worldSearch","worldStages");wireSearch("saSearch","saStages");
 
 const tr=c=>"<tr>"+c.map(v=>`<td>${esc(v)}</td>`).join("")+"</tr>";
-const moneyText=v=>esc(String(v??"").replace(/([Q€])\s+/g,"$1\u00A0").replace(/\s+%$/,"%"));
-const trMoney=(label,values)=>"<tr><td>"+esc(label)+"</td>"+values.map(v=>`<td class="num-cell">${moneyText(v)}</td>`).join("")+"</tr>";
 document.getElementById("constSchedule").innerHTML=DATA.constSchedule.map(r=>tr([r["Periodo"],r["Hito / fase"],r["Presencia propietarios"],r["Criterio de control"]])).join("");
-document.getElementById("constBudget").innerHTML=DATA.constBudget.map(r=>trMoney(r["Fase de Obra / Rubro de Inversión"],[r["Coste Estimado (GTQ)"],r["Coste Estimado (EUR)"],r["% del Total"]])).join("");
-document.getElementById("constAccessBudget").innerHTML=DATA.constAccessBudget.map(r=>trMoney(r["Partida / Descripción Técnica de la Obra"],[r["Materiales (GTQ)"],r["Mano de Obra (GTQ)"],r["Total Partida (GTQ)"]])).join("");
+document.getElementById("constBudget").innerHTML=DATA.constBudget.map(r=>tr([r["Fase de Obra / Rubro de Inversión"],r["Coste Estimado (GTQ)"],r["Coste Estimado (EUR)"],r["% del Total"]])).join("");
+document.getElementById("constAccessBudget").innerHTML=DATA.constAccessBudget.map(r=>tr([r["Partida / Descripción Técnica de la Obra"],r["Materiales (GTQ)"],r["Mano de Obra (GTQ)"],r["Total Partida (GTQ)"]])).join("");
 document.getElementById("constTech").innerHTML=DATA.constTechnical.map(s=>`<div class="tech"><h3>${esc(s.title)}</h3>${s.items.map(x=>x.style.startsWith("Heading")?`<h4>${esc(x.text)}</h4>`:`<p>${esc(x.text)}</p>`).join("")}</div>`).join("");
 document.getElementById("wTransport").innerHTML=DATA.worldTransport.map(r=>tr([r["Sector"],r["Medio recomendado"],r["Criterio operativo"]])).join("");
 document.getElementById("saTransport").innerHTML=DATA.saTransport.map(r=>tr([r["Sector"],r["Medio recomendado"],r["Criterio operativo"]])).join("");
